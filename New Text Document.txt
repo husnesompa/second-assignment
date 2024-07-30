@@ -7,18 +7,15 @@
 
 }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+@font-face {
+    font-family: 'Miama';
+    src: url(fonts/Miama.ttf) format(truetype);
+
 }
 
-body {
+ html body {
+    padding: 0;
     margin: 0;
-    font-family: "Inter", sans-serif;
 }
 
 .display_flex {
@@ -27,22 +24,28 @@ body {
 
 .all_button {
     background: #E6533C;
-    padding: 16px 40px;
+    padding: 16px 40px 16px 40px;
     border-radius: 42px;
     color: #FFFFFF;
     font-size: 1rem;
+    font-family: "Inter", sans-serif;
     border: none;
 }
 
 .all_paragraph {
+    font-family: "Inter", sans-serif;
     line-height: 24px;
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
 }
 
+
 /*------Regular Css------*/
 .first_part {
     background: linear-gradient(180deg, rgba(17, 17, 17, 1) 100%, rgba(119, 119, 119, 0) 100%);
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* align-items: center; */
 }
 
 .navbar_part {
@@ -51,6 +54,7 @@ body {
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
+    font-family: "Inter", sans-serif;
 }
 
 .navbar_part p {
@@ -92,17 +96,15 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
+    /* padding-left: 100px; */
 }
 
 .content_part {
-    max-width: 100%;
-    padding-right: 20px;
-    box-sizing: border-box;
+    width: 550px;
 }
 
 h1 {
+    font-family: "Inter", sans-serif;
     font-size: 5rem;
     font-weight: 900;
     color: rgba(255, 255, 255, 1);
@@ -110,33 +112,26 @@ h1 {
 }
 
 .shape {
-    font-size: 4rem;
+    /* font-family: 'Miama'; */
+    font-size: 78px;
     font-style: italic;
     font-weight: 400;
+    line-height: 93.6px;
+    text-align: left;
+
 }
 
 .download_button {
-    padding: 16px 40px;
+    padding: 16px 40px 16px 40px;
     border-radius: 42px;
     font-size: 1rem;
+    font-family: "Inter", sans-serif;
     background-color: rgba(17, 17, 17, 1);
     border: 1px solid rgba(255, 255, 255, 1);
     color: #FFFFFF;
     margin-left: 10px;
-}
 
-/* .image_container {
-    position: relative;
-    width: 100%;
-    height: 100%;
 }
-
-.background_image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
 
 .image_container {
     position: relative;
@@ -157,19 +152,21 @@ h1 {
     background-color: rgba(54, 54, 54, 0.9);
     border-radius: 10px;
     text-align: center;
-    padding: 5px 23px;
     align-items: center;
+    padding: 5px 23px 5px 23px;
+    border: 1px;
+
 
 }
 
 .overlay-top-right {
     top: 20%;
-    right: 5%;
+    right: 0%;
 }
 
 .overlay-bottom-left {
     bottom: 12%;
-    left: 5%;
+    left: -30%;
 }
 
 .content_count {
@@ -177,6 +174,7 @@ h1 {
 }
 
 .content_count h3 {
+    font-family: "Inter", sans-serif;
     font-size: 24px;
     font-weight: 900;
     line-height: 40px;
@@ -197,18 +195,19 @@ h1 {
     width: 40px;
     border-radius: 50%;
     background: rgba(230, 83, 60, 1);
-    align-items: center;
+
 }
 
-/* Media Queries for responsiveness */
-@media screen and (max-width: 576px) {
+/* ----first part end here ------ */
+
+@media screen and (max-width:576px) {
+
     .content_part p {
-        padding-right: 0;
+        padding-right: 120px;
     }
 
     .first_part {
         padding-left: 20px;
-        padding-right: 20px;
         flex-direction: row;
     }
 
@@ -218,12 +217,11 @@ h1 {
 
     .join_club_part,
     .content_part {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 0px;
     }
 
     .content_part {
-        width: 90%;
+        width: 400px;
     }
 
     h1,
@@ -235,13 +233,15 @@ h1 {
     .button_part {
         display: flex;
         justify-content: left;
-        margin: 30px 0 10px 0;
+        margin: 30px 0px 10px 0px;
+
     }
 
     .all_button,
     .download_button {
-        padding: 16px 30px;
+        padding: 16px 30px 16px 30px;
     }
+
 
     .join_club_part {
         display: grid;
@@ -250,7 +250,7 @@ h1 {
     }
 
     .overlay {
-        padding: 0 10px;
+        padding: 0px 10px 0px 10px
     }
 
     .overlay-top-right {
@@ -260,7 +260,7 @@ h1 {
 
     .overlay-bottom-left {
         bottom: 5%;
-        left: 0;
+        left: 0%;
     }
 
     /* ----- first part for mobile device end here ----- */
