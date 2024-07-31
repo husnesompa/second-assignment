@@ -39,6 +39,10 @@ h3 {
     text-align: center;
 }
 
+.fonts_size {
+    font-size: 14px;
+}
+
 .all_button {
     background: #E6533C;
     padding: 16px 40px;
@@ -265,6 +269,35 @@ h1 {
 
 /* ------Second part end here ------ */
 
+.third_part {
+    margin: 0 10% 0 10%;
+    display: flex;
+    background: rgba(34, 34, 34, 1);
+    border-radius: 18px;
+}
+
+.run_content {
+    margin: 4% 16% 4% 6%;
+}
+
+.run_content_button {
+    margin-top: 6%;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.run_part {
+    margin: 3% 3% 2% 3%;
+}
+
+.run_image {
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
+}
+
+/* --------Third part end here------ */
+
 /* Media Queries for responsiveness */
 @media screen and (max-width: 576px) {
     .content_part p {
@@ -331,6 +364,7 @@ h1 {
     /* ----- first part for mobile device end here ----- */
     .second_part {
         margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .jogging_part {
@@ -364,6 +398,33 @@ h1 {
     .summery {
         margin: 0px;
     }
+
+    /* ----- second part for mobile device end here ---- */
+    .third_part {
+        margin: 0 3% 0 3%;
+        padding: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .run_content {
+        margin-right: 0px;
+    }
+
+    .run_content_button {
+        margin-top: 6%;
+        padding-left: 38%;
+        padding-right: 38%;
+    }
+
+    .run_image {
+        width: 335px;
+        height: 200px;
+        border-radius: 18px;
+    }
+
+    /* ----- Third part for mobile device end here ---- */
+
 
 
 }
