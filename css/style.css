@@ -230,7 +230,8 @@ h1 {
 
 /* ------First part end here ------ */
 
-.second_part {
+.second_part,
+.gallery_section {
     margin: 7% 10% 7% 10%;
 }
 
@@ -385,7 +386,62 @@ form button {
 }
 
 /* ///-----BMI part end here------/// */
+.gallery_part {
+    background: rgba(255, 255, 255, 0.1);
 
+}
+
+.gallery_part {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 18px;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 5%;
+}
+
+.image-container {
+    width: 320px;
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 18px;
+}
+
+.text_overlay {
+    position: absolute;
+    left: 4%;
+    bottom: 4%;
+}
+
+.employee_name {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.employee_designation {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+/* /// ----gallery part end here ----/// */
 
 /* Media Queries for responsiveness */
 @media screen and (max-width: 576px) {
@@ -558,6 +614,17 @@ form button {
     }
 
     /* ---BMI part end here ---- */
+    .gallery_part {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        padding: 35px;
+    }
 
+    .gallery_section {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    /* ///----gallery part end here ----/// */
 
 }
