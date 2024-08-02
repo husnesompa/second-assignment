@@ -7,6 +7,12 @@
 
 }
 
+.playwrite-hr {
+    font-family: "Playwrite HR", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 html,
 body {
     margin: 0;
@@ -15,12 +21,8 @@ body {
     height: 100%;
     overflow-x: hidden;
     background-color: #000000;
-
-}
-
-body {
-    margin: 0;
     font-family: "Inter", sans-serif;
+
 }
 
 h1,
@@ -68,15 +70,14 @@ h3 {
 }
 
 .third_part,
-.bmi_calculator_part {
+.bmi_calculator_part,
+footer {
     background: rgba(34, 34, 34, 1);
 }
 
 /*------Regular Css------*/
 .first_part {
     background: linear-gradient(180deg, rgba(17, 17, 17, 1) 100%, rgba(119, 119, 119, 0) 100%);
-
-
 }
 
 .navbar_part {
@@ -88,14 +89,15 @@ h3 {
 
 }
 
-.navbar_part p {
-    font-size: 2.2rem;
+.fitness {
+    font-size: 36px;
     font-style: italic;
     font-weight: 800;
     line-height: 2.8rem;
     text-align: left;
     color: rgba(230, 83, 60, 1);
 }
+
 
 .menu {
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -127,8 +129,6 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    /* padding-left: 5%;
-    padding-right: 5%; */
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
@@ -147,9 +147,12 @@ h1 {
     font-weight: 900;
     color: rgba(255, 255, 255, 1);
     margin-bottom: 30px;
+    line-height: 93px;
+    padding-top: 10%;
 }
 
 .shape {
+    font-family: "Playwrite HR", cursive;
     font-size: 4rem;
     font-style: italic;
     font-weight: 400;
@@ -169,6 +172,9 @@ h1 {
 .image_container {
     position: relative;
     display: inline-block;
+    margin-left: 0px;
+    padding-left: 30%;
+
 }
 
 .background_image {
@@ -177,6 +183,7 @@ h1 {
     height: 100%;
     overflow: hidden;
     object-fit: cover;
+    padding-top: -30px;
 }
 
 .overlay {
@@ -191,13 +198,17 @@ h1 {
 }
 
 .overlay-top-right {
-    top: 20%;
-    right: 5%;
+    top: 22%;
+    right: -12%;
+}
+
+.five_hundred {
+    font-size: 40px !important;
 }
 
 .overlay-bottom-left {
-    bottom: 12%;
-    left: 5%;
+    bottom: 10%;
+    left: 10%;
 }
 
 .content_count {
@@ -242,7 +253,6 @@ h1 {
 
 .jogging_part {
     display: flex;
-    /* grid-template-columns: 4fr; */
     margin-top: 3%;
     justify-content: center;
     align-items: center;
@@ -267,7 +277,6 @@ h1 {
 .third_part {
     margin: 0 10% 0 10%;
     display: flex;
-
     border-radius: 18px;
 }
 
@@ -289,6 +298,8 @@ h1 {
     width: 366px;
     height: 312px;
     border-radius: 18px;
+    object-fit: cover;
+
 }
 
 /* --------Third part end here------ */
@@ -306,8 +317,8 @@ h1 {
     padding: 1% 5% 1% 10%;
 }
 
-.bmi_topic_name {
-    font-size: 28px;
+.topic_name {
+    font-size: 25px;
     font-weight: 900;
     line-height: 33.6px;
     text-align: left;
@@ -385,10 +396,10 @@ form button {
     margin-top: 3% !important;
 }
 
+
 /* ///-----BMI part end here------/// */
 .gallery_part {
     background: rgba(255, 255, 255, 0.1);
-
 }
 
 .gallery_part {
@@ -442,15 +453,73 @@ form button {
 }
 
 /* /// ----gallery part end here ----/// */
+.footer_section {
+    padding: 4% 10% 4% 10%;
+    display: flex;
+}
+
+.fitness p {
+    font-size: 63px;
+    margin-top: 15px;
+}
+
+.fitness_content {
+    margin-top: -30px;
+}
+
+.footer_fitness {
+    font-size: 70px;
+}
+
+.footer_content {
+    width: 352px;
+}
+
+.footer_link {
+    margin-left: 12%;
+}
+
+.footer_ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 18px 0px 0px 0px;
+}
+
+.all_right_reserved {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    margin-left: 142px;
+    margin-right: 142px;
+}
+
 
 /* Media Queries for responsiveness */
 @media screen and (max-width: 576px) {
+
+    .navbar_part {
+        padding-left: 10px;
+    }
+
+    h1 {
+        padding-top: 2%;
+    }
+
     .content_part p {
         padding-right: 0;
     }
 
     .first_part {
-        padding-left: 20px;
+        padding-left: 10px;
         padding-right: 20px;
         flex-direction: row;
     }
@@ -483,13 +552,20 @@ form button {
 
     .all_button,
     .download_button {
-        padding: 16px 30px;
+        padding: 16px 20px;
+        font-size: 16px;
     }
 
     .join_club_part {
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
+        margin-left: 0px;
+    }
+
+    .image_container {
+        padding-left: 4%;
+
     }
 
     .overlay {
@@ -497,13 +573,13 @@ form button {
     }
 
     .overlay-top-right {
-        top: 30%;
-        right: 12%;
+        top: 14%;
+        right: -10px;
     }
 
     .overlay-bottom-left {
-        bottom: 5%;
-        left: 0;
+        bottom: 37%;
+        left: 7%;
     }
 
     /* ----- first part for mobile device end here ----- */
@@ -587,7 +663,7 @@ form button {
         margin-left: 2%;
     }
 
-    .bmi_topic_name {
+    .topic_name {
         font-size: 20px;
     }
 
@@ -626,5 +702,25 @@ form button {
     }
 
     /* ///----gallery part end here ----/// */
+
+
+    .footer_section {
+        display: grid;
+    }
+
+    .footer_link {
+        margin: 30px 0px 25px 0px;
+    }
+
+    .footer_li {
+        margin-bottom: 4px;
+    }
+
+    .all_right_reserved {
+        margin-left: 40px;
+        margin-right: 40px;
+        border-top: 2px solid rgba(255, 255, 255, 0.1);
+        font-size: 18px;
+    }
 
 }
