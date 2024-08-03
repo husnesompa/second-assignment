@@ -90,7 +90,7 @@ footer {
 }
 
 .fitness {
-    font-size: 36px;
+    font-size: 40px;
     font-style: italic;
     font-weight: 800;
     line-height: 2.8rem;
@@ -98,15 +98,25 @@ footer {
     color: rgba(230, 83, 60, 1);
 }
 
+.menu_icon i {
+    color: #FFFFFF;
+    font-size: 28px;
+    display: none;
+}
+
 
 .menu {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 39px;
+    margin-left: 0px;
+    align-items: center;
+    padding: 2px;
 }
+
 
 .menu li {
     list-style: none;
-    padding: 20px;
+    padding: 14px 20px;
 }
 
 .menu li a {
@@ -115,14 +125,18 @@ footer {
     font-weight: 400;
     font-size: 16px;
     line-height: 15px;
+    padding: 14px 20px;
+
 }
 
 #home {
     background-color: rgba(230, 83, 60, 1);
     border-radius: 36px;
-    width: 82px;
     text-align: center;
     font-weight: 600;
+    margin-left: 0px;
+    padding: 14px 20px;
+
 }
 
 .join_club_part {
@@ -297,9 +311,8 @@ h1 {
 .run_image {
     width: 366px;
     height: 312px;
-    border-radius: 18px;
     object-fit: cover;
-
+    border-radius: 18px;
 }
 
 /* --------Third part end here------ */
@@ -526,6 +539,10 @@ form button {
 
     .menu {
         display: none;
+    }
+
+    .menu_icon i {
+        display: block;
     }
 
     .join_club_part,
